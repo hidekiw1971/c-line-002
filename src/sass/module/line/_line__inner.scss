@@ -1,0 +1,16 @@
+@use "global" as *;
+.line__inner {
+  display: inline-block;
+  min-width: rem(375);
+  width: 100%;
+  height: 100vh;
+  // ajustment
+  position: relative;
+
+  @include mq(md) {
+    max-width: rem(1280);
+    width: 100%;
+  }
+  @include mq(xl) {
+  }
+}

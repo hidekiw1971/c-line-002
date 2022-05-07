@@ -1,0 +1,9 @@
+@use "global" as *;
+.outside {
+  // ajustment
+  align-items: center;
+  @include mq(md) {
+  }
+  @include mq(xl) {
+  }
+}

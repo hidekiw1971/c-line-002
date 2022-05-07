@@ -1,0 +1,32 @@
+@use "global" as *;
+.line__body {
+  // size
+  width: 300%;
+  height: 1px;
+  background-color: #333;
+  // ajustment
+  transform: rotate(45deg);
+  transform-origin: 0% 0%;
+  position: absolute;
+
+  @include mq(md) {
+  }
+  @include mq(xl) {
+  }
+}
+
+.line__body::after {
+  content: "";
+  // size
+  width: 200%;
+  height: 1px;
+  background-color: #333;
+  // ajustment
+  position: absolute;
+  top: 817px;
+  transform: rotate(100deg);
+  @include mq(md) {
+  }
+  @include mq(xl) {
+  }
+}
